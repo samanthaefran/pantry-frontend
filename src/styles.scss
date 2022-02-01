@@ -1,9 +1,6 @@
 
-// --------------------------
-// VARIABLES
-// --------------------------
-$maincolor: #f19c83;
-$contrastcolor: white;
+$maincolor: #369369;
+$contrastcolor: #ffff;
 
 @mixin white-text-black-bg {
   color: $contrastcolor;
@@ -14,11 +11,6 @@ $contrastcolor: white;
   color: $maincolor;
   background-color: $contrastcolor;
 }
-
-// --------------------------
-// Header
-// --------------------------
-
 
 nav {
   display: flex;
