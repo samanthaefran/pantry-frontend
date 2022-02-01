@@ -1,6 +1,7 @@
 import { login, logout } from '../services/firebase'
 
 function Home(props) {
+  // console.log(props.user)
   return (
     <div className="main">
       <button onClick={login}>Login</button>

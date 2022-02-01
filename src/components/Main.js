@@ -50,7 +50,7 @@ function Main(props) {
     <main>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home user={props.user} />
         </Route>
         <Route path="/pantry/:id">
           <Edit
