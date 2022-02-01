@@ -12,9 +12,9 @@ function Header(props) {
       <Link to="/pantry">
         my pantry
       </Link>
-      <Link to="/shopping-list">
+      {/* <Link to="/shopping-list">
         my shopping list
-      </Link>
+      </Link> */}
     </nav>
   )
 }

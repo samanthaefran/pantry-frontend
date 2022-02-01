@@ -10,10 +10,10 @@ function Index(props) {
   const loaded = () => {
     return props.pantry.map((item) => (
       <div key={item._id} className='item'>
-        <ul>{item.name}</ul>
+        <ul>item name: {item.name}</ul>
         <ul>quantity: {item.quantity}</ul>
-        <button onClick={() => deleteItem(item._id)}> delete </button>
-        <Link to={`/pantry/${item._id}`}> Edit </Link>
+        <button onClick={() => deleteItem(item._id)} > delete </button>
+        <button><Link to={`/pantry/${item._id}`}> Edit </Link></button>
       </div>
     ))
   }

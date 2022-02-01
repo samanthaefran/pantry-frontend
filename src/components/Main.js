@@ -4,6 +4,7 @@ import Index from '../pages/Index'
 import Edit from '../pages/Edit'
 import New from '../pages/New'
 import Home from '../pages/Home'
+import List from '../pages/List'
 
 function Main(props) {
   const [pantry, setPantry] = useState(null)
@@ -63,6 +64,9 @@ function Main(props) {
         </Route>
         <Route path="/add-item">
           <New createPantry={createPantry} />
+        </Route>
+        <Route path="/shopping-list">
+          <List List={List} /> 
         </Route>
       </Switch>
     </main>
